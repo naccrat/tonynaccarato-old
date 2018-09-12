@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chapter One - Treasure Island</title>
+<meta http-equiv="X-UA-Compatible" content=“IE=edge”>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+<header>
+    <h2><a href="http://www.pluralsight.com" target="_blank">Tony Naccarato</a></h2>
+    <nav>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+    </nav>
+</header>
+<section id="hero" class="hero">
+   <div class="background-image" style="background-image: url('images/hero.jpg')"></div>
+    <h1>Tony Naccarato</h1>
+    <h3>User experience designer based out of the Salt Lake City, Utah area.</h3>
+</section>
+<section id="illus" class="illustrations">
+    <ul class="grid">
+        <li class="small" style="background-image: url(images/one-last-tremendous-cut.jpg)" alt=""></li>
+        <li class="large" style="background-image: url(images/cover-illustration.jpg)" alt=""></li>
+        <li class="small" style="background-image: url(images/the-boarders-swarmed-over-the-fence-like-monkeys.jpg)" alt=""></li>
+        <li class="large" style="background-image: url(images/deadly-wrestle.jpg)" alt=""></li>
+    </ul>
+</section>
+<footer>
+  <ul>
+      <li><a href="#" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-snapchat-square"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-pinterest-square"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-github-square"></i></a></li>
+  </ul>
+   <p>Read the whole <i>Treasure Island</i> novel on the internet</p>
+    <p>&copy;<script>document.write(new Date().getFullYear())</script> Whoever</p>
+</footer>
+
+<script type="text/javascript">
+		$(document).ready(function(){
+		$('a[href^="#"]').on('click',function (e) {e.preventDefault();
+
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+</script>
+
+</body>
+</html>
