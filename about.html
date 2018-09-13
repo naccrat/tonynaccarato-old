@@ -14,117 +14,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $('#Footer').load('../components/footer.html');
+        $('#Header').load('../components/header.html');
+        $('#CallToAction').load('../components/cta.html');
+      });
+    </script>
   </head>
   <body>
   
   <div class="js-animsition animsition" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
 
-    <header class="templateux-navbar navbar-light"  data-aos="fade-down">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-3 col-3"><div class="site-logo"><a href="index.html" class="animsition-link">Strategy</a></div></div>
-          <div class="col-sm-9 col-9 text-right">
-            <button class="hamburger hamburger--spin toggle-menu ml-auto js-toggle-menu" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>  
-
-            <nav class="templateux-menu js-templateux-menu" role="navigation">
-              <ul class="list-unstyled">
-                <li class="d-md-none d-block"><a href="index.html" class="animsition-link">Home</a></li>
-                <li><a href="work.html" class="animsition-link">Work</a></li>
-                <li class="active"><a href="about.html" class="animsition-link">About</a></li>
-                <li><a href="blog.html" class="animsition-link">Blog</a></li>
-                <li><a href="contact.html" class="animsition-link">Contact</a></li>
-              </ul>
-            </nav>  
-          </div>
-        </div>
-      </div>
-    </header>
-
+    <div id="Header"></div>
     <!-- END templateux-navbar -->
-    <section class="templateux-hero overlay"  data-scrollax-parent="true">
-      <div class="cover" data-scrollax="properties: { translateY: '30%' }"><img src="images/hero_2.jpg" /></div>
 
-      <div class="container">
-        <div class="row align-items-center justify-content-center intro">
-          <div class="col-md-10" data-aos="fade-up">
-            <h1>About Us</h1>
-            <p class="lead">We are experts, engineers, authors, speakers, artists who creates astounding products for people.</p>
-            <a href="#next" class="go-down js-smoothscroll"></a>
+    <section class="templateux-hero">
+        <div class="container">
+          <div class="row align-items-center justify-content-center intro">
+            <div class="col-md-10" data-aos="fade-up">
+              <h1>About me</h1> 
+              <p>I'm a user experience designer that follows a user-centered design process to better understand real users—their needs, experiences, and motivations. I approach design from a user-perspective and balance users’ needs alongside business goals and technical capabilities. I work closely with product managers and developers to determine necessary features and drive the design of products. I have experience conducting user research, extracting requirements, designing an interaction framework, iterating, and presenting ideas to development and management.</p>
+              <a href="#next" class="go-down js-smoothscroll"></a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     <!-- END templateux-hero -->
     
     
     <section class="templateux-section" id="next">
-      
-      <div class="container py-5" data-aos="fade-up">
+\      <div class="container py-5" data-aos="fade-up">
         <div class="row">
           <div class="col-md-12 clearfix mb-3">
-            <h2>We Are Experts</h2>
+            <h2>How I came to be a UX Designer</h2>
           </div>
           <div class="col-md-6">
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p>I went to Weber State University and got a BFA in Visual Communication and Design in 2005. While at school I was able to work at a traditional offset printing facility prepping files for printing. I also worked for the university bookstore helping design their website. My goal at this point was to be a graphic designer for a well know ad agency.</p>
+            <p>After graduating I started working for a company called Logoworks. For about a year I created logos and stationary sets for clients. I then was asked to be the designer for the marketing team at the company. This gave me the opportunity to really be focused on one area and work more on the web. In addition to designing some really fun printed marketing pieces, I also worked on a lot of website landing page and the companies main website. This also gave me more skills in front-end development that I had started to learn at the university bookstore. This opportunity really opened my eyes to usability and making sure I designed things that were easy for people to use.</p>
+            <p>I realized that I wanted to do more design based on usability which lead me to my next job working for 3point5. Here I had the chance to work with a lot of great outdoor/sporting brands and create training websites for them. This gave me an understanding of how to work with business requirements but design something that was unique and easy for users to understand. At this company, I had the chance to work with a new product they were building and was in charge of the overall design and user experience. I had the chance to work with researchers and understand more about the user-centric approach to designing. This experience lead me to my next opportunity.</p>
           </div>
-
           <div class="col-md-6">
-            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-          </div>
-        </div>
-
-         
-
-        <div class="row templateux-section">
-          <div class="col-md-12 clearfix mb-5">
-            <h2>Team</h2>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="block-38 ">
-              <div class="block-38-img">
-                <div class="block-38-header">
-                  <img src="images/person_1.jpg" alt="Image placeholder">
-                  <h3 class="block-38-heading">Elizabeth Graham</h3>
-                  <p class="block-38-subheading">CEO, Founder</p>
-                </div>
-                <div class="block-38-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="block-38 ">
-              <div class="block-38-img">
-                <div class="block-38-header">
-                  <img src="images/person_2.jpg" alt="Image placeholder">
-                  <h3 class="block-38-heading">Amanda Gold</h3>
-                  <p class="block-38-subheading">Co-Founder</p>
-                </div>
-                <div class="block-38-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="block-38 ">
-              <div class="block-38-img">
-                <div class="block-38-header">
-                  <img src="images/person_3.jpg" alt="Image placeholder">
-                  <h3 class="block-38-heading">Chris Stanworth</h3>
-                  <p class="block-38-subheading">Co-Founder</p>
-                </div>
-                <div class="block-38-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                </div>
-              </div>
-            </div>
+            <p>I started working as an interaction designer for a worldwide organization, The Church of Jesus Christ of Latter-day Saints. I was one of over 50 interaction designers in this group and had the chance to start working on some challenging internal applications. Through this experience, I was able to design applications that would be translated into 12 languages. This gave me to chance to realize the power of user testing and iterating while working closely with the clients we were building for.</p>
+            <p>My next opportunity was being a user experience designer for Workfront, formerly known as AtTast. This opportunity expanded my knowledge of user experience design with user testing, customer inquiries, and many tools to help document and understand the user journey. I was able to deepen my understanding of a product organization and how a user experience focus really made a better product. At this point in my career, I wanted to apply what I have learned to a product that I was more passionate about. This lead me to a company called Pluralsight.</p>
+            <p>Pluralsight’s mission is to give technology skills to everyone. This was something I was able to get behind and knew it would be an opportunity to take what I have learned and be able to build on top of that. The company adopted a user-centric philosophy called Directed Discover. This allowed each team in the company to take time and resources to discover the best solution for the users. The projects I was working on are very complex, multi-phase content management systems. This has helped the company be able to have better resource allocation and produce content much quicker, saving thousands of dollars each month. I’ve been able to efficiently work with remote teams and learn the best ways to communicate across cultures and time zones.</p>
           </div>
         </div>
       </div>
@@ -145,125 +80,12 @@
     </section>
     <!-- END section -->
 
-
-    
-
-    <section class="templateux-section">
-
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 clearfix mb-5" data-aos="fade-up">
-            <h2>We Are Experts</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4"  data-aos="fade-up" data-aos-delay="100">
-            <div class="media templateux-media mb-4">
-              <div class="mr-4 icon">
-                <span class="icon-monitor display-3"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="h5">Web Development</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4"  data-aos="fade-up" data-aos-delay="200">
-            <div class="media templateux-media mb-4">
-              <div class="mr-4 icon">
-                <span class="icon-command display-3"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="h5">Brand identity</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4"  data-aos="fade-up" data-aos-delay="300">
-            <div class="media templateux-media mb-4">
-              <div class="mr-4 icon">
-                <span class="icon-feather display-3"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="h5">Copywriting</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END row -->
-        <div class="row">
-          <div class="col-md-4"  data-aos="fade-up" data-aos-delay="100">
-            <div class="media templateux-media mb-4">
-              <div class="mr-4 icon">
-                <span class="icon-shopping-cart display-3"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="h5">eCommerce</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4"  data-aos="fade-up" data-aos-delay="200">
-            <div class="media templateux-media mb-4">
-              <div class="mr-4 icon">
-                <span class="icon-video display-3"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="h5">Video Editing</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4"  data-aos="fade-up" data-aos-delay="300">
-            <div class="media templateux-media mb-4">
-              <div class="mr-4 icon">
-                <span class="icon-layers2 display-3"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="h5">Data Driven Applications</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END row -->
-      </div>  
-    </section>
-
-    <a class="templateux-section templateux-cta animsition-link" href="contact.html" data-aos="fade-up">
-      <div class="container-fluid">
-        <div class="cta-inner">
-          <h2><span class="words-1">Start a Project.</span> <span class="words-2">Let's chat we are good people.</span></h2>
-        </div>
-      </div>
-    </a>
+    <div id="CallToAction"></div> 
     <!-- END call to action -->
 
-    <footer class="templateux-footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6 text-md-left text-center">
-            <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
-          </div>
-          <div class="col-md-6 text-md-right text-center footer-social">
-            <a href="#" class="p-3"><span class="icon-facebook2"></span></a>
-            <a href="#" class="p-3"><span class="icon-twitter2"></span></a>
-            <a href="#" class="p-3"><span class="icon-dribbble2"></span></a>
-            <a href="#" class="p-3"><span class="icon-instagram"></span></a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <div id="Footer"></div>
 
   </div>
-
-  
   <script src="js/scripts-all.js"></script>
   <script src="js/main.js"></script>
   
