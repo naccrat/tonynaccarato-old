@@ -13,13 +13,20 @@
         
     <link rel="stylesheet" href="css/style.css">
 
-    
+    <script src="js/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $('#Footer').load('../components/footer.html');
+        $('#Header').load('../components/header.html');
+        $('#CallToAction').load('../components/cta.html');
+      });
+    </script>
   </head>
   <body>
   
   <div class="js-animsition animsition" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
     
-    <div id="header"></div> 
+    <div id="Header"></div> 
     
     <!-- END templateux-navbar -->
     <section class="templateux-hero">
@@ -206,26 +213,15 @@
       </div>
     </section>
     <!-- END section -->
-
-    <a class="templateux-section templateux-cta animsition-link mt-5" href="contact.html" data-aos="fade-up">
-      <div class="container-fluid">
-        <div class="cta-inner">
-          <h2><span class="words-1">I'm available for freelance work.</span> <span class="words-2">Let's chat and get started.</span></h2>
-        </div>
-      </div>
-    </a>
+    
+    <div id="#CallToAction"></div> 
     <!-- END call to action -->
 
-    <div id="footer"></div>
+    <div id="Footer"></div>
 
   </div>
   <script src="js/scripts-all.js"></script>
   <script src="js/main.js"></script>
-  <script src="jquery.js"></script> 
-  <script> 
-    $(function(){
-      $('#header').load('../components/header.html'); 
-    });
-  </script>
+
   </body>
 </html>
