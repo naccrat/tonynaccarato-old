@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Strategy &mdash; Free Portfolio Template by Colorlib</title>
+
+    <title>Tony Naccarato - User Experience Designer</title>
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/aos.min.css">
     <link rel="stylesheet" href="css/hamburgers/hamburgers.min.css">
@@ -11,41 +13,25 @@
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/animsition.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $('#Nav').load('../components/nav.html');
+        $('#CallToAction').load('../components/cta.html');
+        $('#Footer').load('../components/footer.html');
+      });
+    </script>
   </head>
   <body>
   
   <div class="js-animsition animsition" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
-
-    <header class="templateux-navbar"  data-aos="fade-down">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-3 col-3"><div class="site-logo"><a href="index.html" class="animsition-link">Strategy</a></div></div>
-          <div class="col-sm-9 col-9 text-right">
-
-            <button class="hamburger hamburger--spin toggle-menu ml-auto js-toggle-menu" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>  
-
-            <nav class="templateux-menu js-templateux-menu" role="navigation">
-              <ul class="list-unstyled">
-                <li class="d-md-none d-block"><a href="index.html" class="animsition-link">Home</a></li>
-                <li class="active"><a href="work.html" class="animsition-link">Work</a></li>
-                <li><a href="about.html" class="animsition-link">About</a></li>
-                <li><a href="blog.html" class="animsition-link">Blog</a></li>
-                <li><a href="contact.html" class="animsition-link">Contact</a></li>
-              </ul>
-            </nav>  
-          </div>
-        </div>
-      </div>
-    </header>
-
+    
+    <div id="Nav"></div> 
     <!-- END templateux-navbar -->
+
     <section class="templateux-hero"  data-scrollax-parent="true">
       <!-- <div class="cover" data-scrollax="properties: { translateY: '30%' }"><img src="images/hero_2.jpg" /></div> -->
 
@@ -53,12 +39,7 @@
         <div class="row align-items-center justify-content-center intro">
           <div class="col-md-10" data-aos="fade-up">
             <h1>Inventory Managment Application</h1>
-            
             <a href="#next" class="go-down js-smoothscroll"></a>
-            
-
-            
-            
           </div>
         </div>
       </div>
@@ -77,7 +58,7 @@
               </div>
               <div class="col-md-4">
                 <span class=caption>Team</span>
-                <strong>John Smith, Chris Gold</strong>
+                <strong></strong>
               </div>
               <div class="col-md-4">
                 <span class=caption>Company</span>
@@ -86,23 +67,24 @@
             </div>
             
             <div class="row">
-              <div class="col-md-6">
-            <p class="mb-5">Nullam nec purus ut sem hendrerit scelerisque a non magna. Curabitur porttitor turpis vehicula dignissim tempus. Praesent hendrerit suscipit magna, a venenatis dui placerat nec. Suspendisse potenti. </p>
-              </div>
-              <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio sed, quia at error minus, praesentium qui tempora beatae libero provident.</p>
+              <div class="col-md-12">
+                <p>What do you do when the current SaaS offerings don’t do what you need them to, you build your own. The company that hired me to design their own product inventory app did just that. They had never worked with a user experience designer but heard that was the way to build software so they contacted me and advised me on how to go about it. In this regard, I’ve been a consultant for them, showing them the process and how to involve the user along the was, but also the UX designer.</p>
               </div>
             </div>
 
 
-            <p class="text-center mb-5"><img src="images/img_2_large.jpg" alt="Image placeholder" class="img-fluid"></p>
+            <p class="text-center mb-5"><img src="images/Inventory-app-screen.png" alt="Image placeholder" class="img-fluid"></p>
 
             <div class="row mb-5">
               <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id veniam quia distinctio temporibus delectus laborum, error qui iusto recusandae nesciunt voluptatem cupiditate, quaerat, odio ullam pariatur ipsam rerum dignissimos architecto, eos voluptatibus consectetur dicta ipsum facilis sunt. Accusantium, tenetur nam.</p>
+                <h2>The Problem</h2>
+                <p>Their business had very specific needs in how to handle inventory but also how to handle that across many offices and people. Some of the inventory gets used but some of it gets assigned to a user and they need to track to where it is at. If a piece of equipment gets worn out, they need to discard it (while keeping the data on it) and replace it with something new. The system also needed to track any transferring or shipping of items both outgoing and incoming and the receiving details (signatures) along with it.</p>
               </div>
               <div class="col-md-6">
-                <p>Ea, assumenda illum molestias omnis natus inventore odit. Totam fugiat, esse. Nostrum, aspernatur sit repellendus. Quas dolor consequuntur quidem commodi debitis possimus veniam consequatur excepturi natus aliquam molestiae, odio praesentium tenetur atque, labore harum. Possimus esse provident eius facere, doloribus!</p>
+                <h2>The Process</h2>
+                <p>I spent a couple of meetings doing some discovery on the process with the SMEs of the company, those that felt the pain of not having the correct system. They had an old system they were using to get by so I observed as they performed tasks in the system, noting the pain points and the problems they were trying to solve. At many times they wanted to jump right into the solution but I advised to continue talking about the problems we were trying to solve.</p>
+                <p>The next process was to start on some wireframes and workflows. At this point, I kept the designs simple to really focus on the interactions and the workflow for the user. I continued to meet with the team which included a couple of executives and engineering leads. I presented the designs using InVision which gave a better fill for progression through the system. This allowed everyone to give input into the designs and fill in the holes of the workflow. Because of the complexity of the system, this process was important. It allows me to keep discovering the problems that we were trying to solve while iterating through the designs. Through many meetings, we were able to a high confidence rank of this being the best solution.</p>
+                <p>This project is a work in progress so the next steps will be to take the designs to other users in the company and testing our solution with them.</p>
               </div>
             </div>
             
